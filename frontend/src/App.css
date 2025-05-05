@@ -1,3 +1,17 @@
+.headerFlex {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  width: 8em;
+}
+
+
+
+
+
+
 .App {
   text-align: center;
 }
