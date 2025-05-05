@@ -1,6 +1,13 @@
 .headerFlex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.headerFlexInner {
+  display: flex;
+  align-items: center;
 }
 
 .headerLogo {
