@@ -1,18 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import { Button, AppBar, Box, Container, Toolbar, Typography } from '@mui/material';
+import CustomTable from './components/CustomTable'
 
 function App() {
+
   return (
     <div className="">
       <AppBar className="" position="sticky">
         <Toolbar>
           <div className="headerFlex">
             <Box className="headerFlexInner">
-            <img src={logo} className="headerLogo" alt="logo" />
-            <Typography variant="h5" component="div">
-            CO2-Footprint
-          </Typography>
+              <img src={logo} className="headerLogo" alt="logo" />
+              <Typography variant="h5" component="div">
+                CO2-Footprint
+              </Typography>
             </Box>
             <Box className="headerFlexInner">
               <Button variant="contained" disableElevation>Startseite</Button>
@@ -24,6 +26,7 @@ function App() {
       </AppBar>
       <Container>
         <section id="content">
+          <CustomTable />
           <div className="text">
             <h2>Überschrift</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
