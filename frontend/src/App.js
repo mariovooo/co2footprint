@@ -9,10 +9,13 @@ import AgricultureIcon from '@mui/icons-material/Agriculture';
 import FactoryIcon from '@mui/icons-material/Factory';
 import RecyclingIcon from '@mui/icons-material/Recycling';
 import CategoryIcon from '@mui/icons-material/Category';
+import theme from './theme';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 
 function App() {
-
+  
   return (
+    <ThemeProvider theme={theme}>
     <div className="">
       <AppBar className="" position="sticky">
         <Toolbar>
@@ -31,12 +34,14 @@ function App() {
           </div>
         </Toolbar>
       </AppBar>
-      <Container>
-        <section id="content">
-          <div className="text">
-            <h2>Ausstoß (in Millionen Tonnen CO2)</h2>
-            <CustomTable data={Emissionen} />
-          </div>
+      <section id="content">
+        <Grid container spacing={10}>
+          <Container>
+            <div className="text">
+              <h2>Ausstoß (in Millionen Tonnen CO2)</h2>
+              <CustomTable data={Emissionen} />
+            </div>
+          </Container>
 
           <Grid container spacing={4}>
             <Grid size={6}>
@@ -53,34 +58,37 @@ function App() {
               />
             </Grid>
             <Grid size={6}>
-            <div className="text">
-            <h2>Was ist der CO2-Fußabdruck?</h2>
-            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-            </p>
-          </div>
+              <Container>
+              <div className="text">
+                <h2>Was ist der CO2-Fußabdruck?</h2>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+              </div>
+              </Container>
             </Grid>
           </Grid>
 
-          <h2>Sektoren</h2>
-              <Grid container spacing={4}>
-                <Grid size={4}>
-                  <CustomCard title="Energie" text="Dies ist ein informativer Text innerhalb der Card." icon={BoltIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Landwirtschaft" text="Dies ist ein informativer Text innerhalb der Card." icon={AgricultureIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Industrie" text="Dies ist ein informativer Text innerhalb der Card." icon={FactoryIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Abfall" text="Dies ist ein informativer Text innerhalb der Card." icon={RecyclingIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Sonstige Sektoren" text="Dies ist ein informativer Text innerhalb der Card." icon={CategoryIcon} />
-                </Grid>
+          <Container>
+            <h2>Sektoren</h2>
+            <Grid container spacing={4}>
+              <Grid size={4}>
+                <CustomCard title="Energie" text="Dies ist ein informativer Text innerhalb der Card." icon={BoltIcon} />
               </Grid>
-
-
+              <Grid size={4}>
+                <CustomCard title="Landwirtschaft" text="Dies ist ein informativer Text innerhalb der Card." icon={AgricultureIcon} />
+              </Grid>
+              <Grid size={4}>
+                <CustomCard title="Industrie" text="Dies ist ein informativer Text innerhalb der Card." icon={FactoryIcon} />
+              </Grid>
+              <Grid size={4}>
+                <CustomCard title="Abfall" text="Dies ist ein informativer Text innerhalb der Card." icon={RecyclingIcon} />
+              </Grid>
+              <Grid size={4}>
+                <CustomCard title="Sonstige Sektoren" text="Dies ist ein informativer Text innerhalb der Card." icon={CategoryIcon} />
+              </Grid>
+            </Grid>
+            </Container>
+            <Container>
 
 
 
@@ -99,10 +107,12 @@ function App() {
             <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
           </div>
-          <Button>test</Button>
-        </section>
-      </Container>
+          </Container>
+        </Grid>
+      </section>
     </div>
+    <CssBaseline />
+  </ThemeProvider>
   );
 }
 
