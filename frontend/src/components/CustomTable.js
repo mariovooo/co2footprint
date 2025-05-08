@@ -1,5 +1,7 @@
-import { DataGrid, QuickFilter } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { Paper } from '@mui/material';
+import { useState } from 'react';
+import TableChart from './TableChart'
 
 function CustomTable(data) {
 
@@ -9,22 +11,34 @@ function CustomTable(data) {
 
     const paginationModel = { page: 0, pageSize: 20 };
 
-    return (
-        <Paper sx={{ height: 400, width: '100%' }}>
+    const [handleSelectionChange, setSelectionHandleChange] = useState(Object)
 
-            <DataGrid
-                rows={data.data}
-                columns={columns}
-                initialState={{
-                    pagination: { paginationModel }
-                }}
-                pageSizeOptions={[20, 50, { value: -1, label: 'Alle' }]}
-                checkboxSelection
-                sx={{ border: 0 }}
-                getRowId={(row) => row.Name}
-                showToolbar
-            />
-        </Paper>
+    return (
+        <>
+            <Paper sx={{ height: 400, width: '100%' }}>
+
+                <DataGrid
+                    rows={data.data}
+                    columns={columns}
+                    initialState={{
+                        pagination: { paginationModel }
+                    }}
+                    pageSizeOptions={[20, 50, { value: -1, label: 'Alle' }]}
+                    checkboxSelection
+                    onRowSelectionModelChange={(newRowSelectionModel) => {
+                        if (newRowSelectionModel.ids.size) {
+                            setSelectionHandleChange(newRowSelectionModel)
+                        } else {
+                            setSelectionHandleChange(data.data)
+                        }
+                    }}
+                    sx={{ border: 0 }}
+                    getRowId={(row) => row.Name}
+                    showToolbar
+                />
+            </Paper>
+            <TableChart data={data.data} handleSelectionChange={handleSelectionChange}/>
+        </>
     )
 }
 
