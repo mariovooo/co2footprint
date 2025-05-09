@@ -18,9 +18,7 @@ function HeaderImage({ url,title,filter }) {
                     backgroundRepeat: 'no-repeat',
                 }}
                 className="headerImage"
-                title="Photo: Myrabella / Wikimedia Commons"
                 role="img"
-                aria-label="Green field"
             >
                 <Box className="headerImageOverlay"
                     sx={{

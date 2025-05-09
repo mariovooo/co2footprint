@@ -14,7 +14,7 @@ function Home() {
     return (
         <>
             <Grid container spacing={4}>
-                <HeaderImage url="./basf.jpg" title="Unser CO2-Fußabdruck und der Klimawandel" filter={true} />
+                <HeaderImage url="./factory.jpg" title="Unser CO2-Fußabdruck und der Klimawandel" filter={true} />
                 <Container>
                     <Box className="text">
                         <h2>Welche Länder und Unternehmen sind die größten Treibhausgasemittenten?</h2>
@@ -38,8 +38,7 @@ function Home() {
                                 maxWidth: { xs: 720, md: 1280 },
                             }}
                             alt="Green field"
-                            title="Photo: Myrabella / Wikimedia Commons"
-                            src="./field.jpg"
+                            src="./fieldstreet.jpg"
                         />
                     </Grid>
                     <Grid size={{ xs: 12, md: 6 }}>
