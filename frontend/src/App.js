@@ -1,136 +1,115 @@
 import logo from './logo.svg';
 import './App.css';
-import { Button, AppBar, Box, Container, Toolbar, Typography, Grid } from '@mui/material';
-import CustomTable from './components/CustomTable'
-import Emissionen from './data/emissionen.json'
-import CustomCard from './components/CustomCard';
-import BoltIcon from '@mui/icons-material/Bolt';
-import AgricultureIcon from '@mui/icons-material/Agriculture';
-import FactoryIcon from '@mui/icons-material/Factory';
-import RecyclingIcon from '@mui/icons-material/Recycling';
-import CategoryIcon from '@mui/icons-material/Category';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Button, AppBar, Box, Toolbar, Typography, Grid } from '@mui/material';
 import theme from './theme';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import CustomDrawer from './components/CustomDrawer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Participate from './pages/Participate';
+import { useState } from 'react';
+import { Menu, MenuItem } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function App() {
 
+  const [anchorElNav, setAnchorElNav] = useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
-    <ThemeProvider theme={theme}>
-      <div className="">
-        <AppBar className="" position="sticky">
-          <Toolbar>
-            <div className="headerFlex">
-              <Box className="headerFlexInner">
-                <img src={logo} className="headerLogo" alt="logo" />
-                <Typography variant="h5" component="div">
-                  CO2-Footprint
-                </Typography>
-              </Box>
-              <Box className="headerFlexInner">
-                <Button variant="contained" disableElevation>Startseite</Button>
-                <Button variant="contained" disableElevation>Einstellungen</Button>
-                <Button variant="contained" disableElevation>Abmelden</Button>
-              </Box>
-            </div>
-          </Toolbar>
-        </AppBar>
-        <section id="content">
+    <Router>
 
-          <CustomDrawer />
-
-          <Grid container spacing={10}>
-            <Container>
-              <div className="text">
-                <h2>Ausstoß (in Millionen Tonnen CO2)</h2>
-                <CustomTable data={Emissionen} />
+      <ThemeProvider theme={theme}>
+        <div className="">
+          <AppBar className="" position="sticky">
+            <Toolbar>
+              <div className="headerFlex">
+                <Box className="headerFlexInner">
+                  <Link to="/">
+                    <Box
+                      component="img"
+                      className="headerLogo"
+                      alt="logo"
+                      title="CO2-footprint"
+                      src={logo}
+                    />
+                  </Link>
+                  <Typography variant="h5" component="div">
+                    CO2-Footprint
+                  </Typography>
+                </Box>
+                <Box className="headerFlexInner" sx={{ display: { xs: 'none', md: 'block' } }}>
+                  <Button variant="contained" disableElevation component={Link} to='/'>Startseite</Button>
+                  <Button variant="contained" disableElevation component={Link} to='/about'>Über uns</Button>
+                  <Button variant="contained" disableElevation component={Link} to='/participate'>Mitmachen</Button>
+                </Box>
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleOpenNavMenu}
+                  color="inherit"
+                  sx={{ display: { xs: 'block', md: 'none' } }}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorElNav}
+                  open={Boolean(anchorElNav)}
+                  onClose={handleCloseNavMenu}
+                  sx={{ display: { xs: 'block', md: 'none' } }}
+                >
+                  <MenuItem onClick={handleCloseNavMenu} component={Link} to='/'>
+                    Startseite
+                  </MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu} component={Link} to='/about'>
+                    Über uns
+                  </MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu} component={Link} to='/participate'>
+                    Mitmachen
+                  </MenuItem>
+                </Menu>
               </div>
-            </Container>
-
-            <Grid container spacing={4}>
-              <Grid size={6}>
-                <Box
-                  component="img"
-                  sx={{
-                    width: "100%",
-                    maxHeight: { xs: 480, md: 720 },
-                    maxWidth: { xs: 720, md: 1280 },
-                  }}
-                  alt="Green field"
-                  title="Photo: Myrabella / Wikimedia Commons"
-                  src="./field.jpg"
-                />
-              </Grid>
-              <Grid size={6}>
-                <Container>
-                  <div className="text">
-                    <h2>Was ist der CO2-Fußabdruck?</h2>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                    </p>
-                  </div>
-                </Container>
-              </Grid>
-            </Grid>
-
-            <Container>
-              <h2>Sektoren</h2>
-              <Grid container spacing={4}>
-                <Grid size={4}>
-                  <CustomCard title="Energie" text="Dies ist ein informativer Text innerhalb der Card." icon={BoltIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Landwirtschaft" text="Dies ist ein informativer Text innerhalb der Card." icon={AgricultureIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Industrie" text="Dies ist ein informativer Text innerhalb der Card." icon={FactoryIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Abfall" text="Dies ist ein informativer Text innerhalb der Card." icon={RecyclingIcon} />
-                </Grid>
-                <Grid size={4}>
-                  <CustomCard title="Sonstige Sektoren" text="Dies ist ein informativer Text innerhalb der Card." icon={CategoryIcon} />
-                </Grid>
-              </Grid>
-            </Container>
-            <Container>
-
-
-
-              <div className="text">
-                <h2>Überschrift3</h2>
-                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-              </div>
-              <div className="text">
-                <h2>Überschrift4</h2>
-                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <div className="text">
-                <h2>Überschrift5</h2>
-                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-              </div>
-            </Container>
-          </Grid>
-        </section>
-        <footer>
-          <Grid container spacing={0}>
-            <Grid size={12}>
+            </Toolbar>
+          </AppBar>
+          <section id="content">
+            <Routes>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="participate" element={<Participate />} />
+            </Routes>
+            <CustomDrawer />
+          </section>
+          <footer>
+            <Grid container spacing={0}>
+              <Grid size={12}>
                 <div>
-                <Button className='whiteTextButton' disableElevation>Impressum</Button>
-                <Button className='whiteTextButton' disableElevation>Datenschutzerklärung</Button>
+                  <Button className='whiteTextButton' disableElevation>Impressum</Button>
+                  <Button className='whiteTextButton' disableElevation>Datenschutzerklärung</Button>
                 </div>
               </Grid>
               <Grid size={12}>
                 <span>© CO2-Footprint by Mario Vogel</span>
               </Grid>
-          </Grid>
+            </Grid>
 
-        </footer>
-      </div>
-      <CssBaseline />
-    </ThemeProvider>
+          </footer>
+        </div>
+        <CssBaseline />
+      </ThemeProvider>
+    </Router>
   );
 }
 
