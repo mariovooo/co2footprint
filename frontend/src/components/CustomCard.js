@@ -15,4 +15,4 @@ function CustomCard ({ title, text, icon: IconComponent }) {
     )
 }
 
-export default CustomCard
+export default CustomCard;

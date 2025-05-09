@@ -1,6 +1,6 @@
 import { BarChart } from '@mui/x-charts/BarChart';
 
-function TableChart(data,handleSelectionChange) {
+function TableChart({data,handleSelectionChange}) {
 
     function transformJson(json) {
         const transform = json.reduce((acc, curr) => {
@@ -13,11 +13,11 @@ function TableChart(data,handleSelectionChange) {
         return transform;
     }
 
-    let selected = transformJson(data.data);
+    let selected = transformJson(data);
 
-    if (data.handleSelectionChange.ids) {
-        const selection = data.handleSelectionChange.ids;
-        const filterselection = data.data.filter(item => selection.has(item.Name));
+    if (handleSelectionChange.ids) {
+        const selection = handleSelectionChange.ids;
+        const filterselection = data.filter(item => selection.has(item.Name));
         selected = transformJson(filterselection)
     }
 

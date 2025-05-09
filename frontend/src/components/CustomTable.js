@@ -3,9 +3,9 @@ import { Paper,Grid } from '@mui/material';
 import { useState } from 'react';
 import TableChart from './TableChart'
 
-function CustomTable(data) {
+function CustomTable({data}) {
 
-    const columns = Object.keys(data.data[0]).map((key) => ({
+    const columns = Object.keys(data[0]).map((key) => ({
         field: key, headerName: key, flex: 1
     }));
 
@@ -20,7 +20,7 @@ function CustomTable(data) {
                     <Paper sx={{ height: 400, width: '100%' }}>
 
                         <DataGrid
-                            rows={data.data}
+                            rows={data}
                             columns={columns}
                             initialState={{
                                 pagination: { paginationModel }
@@ -31,7 +31,7 @@ function CustomTable(data) {
                                 if (newRowSelectionModel.ids.size) {
                                     setSelectionHandleChange(newRowSelectionModel)
                                 } else {
-                                    setSelectionHandleChange(data.data)
+                                    setSelectionHandleChange(data)
                                 }
                             }}
                             sx={{ border: 0 }}
@@ -41,7 +41,7 @@ function CustomTable(data) {
                     </Paper>
                 </Grid>
                 <Grid size={12}>
-                    <TableChart data={data.data} handleSelectionChange={handleSelectionChange} />
+                    <TableChart data={data} handleSelectionChange={handleSelectionChange} />
                 </Grid>
             </Grid>
         </>

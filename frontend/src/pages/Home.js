@@ -1,4 +1,3 @@
-import '../App.css';
 import { Box, Container, Grid } from '@mui/material';
 import CustomTable from '../components/CustomTable'
 import Emissionen from '../data/emissionen.json'
