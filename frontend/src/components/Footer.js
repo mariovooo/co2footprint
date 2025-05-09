@@ -3,7 +3,7 @@ import { Button, Grid } from '@mui/material';
 function Footer() {
     return (
         <footer>
-        <Grid container spacing={0}>
+        <Grid container spacing={2}>
           <Grid size={12}>
             <div>
               <Button className='whiteTextButton' disableElevation>Impressum</Button>

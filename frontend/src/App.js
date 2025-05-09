@@ -1,4 +1,5 @@
 import './App.css';
+import '@fontsource/josefin-sans/300.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import theme from './theme';
 import { ThemeProvider, CssBaseline } from '@mui/material';

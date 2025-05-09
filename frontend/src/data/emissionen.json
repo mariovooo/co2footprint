@@ -1,8 +1,38 @@
 [
   {
+    "Name": "Volksrepublik China",
+    "Emissionen": 10200,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Vereinigte Staaten",
+    "Emissionen": 5360,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Indien",
+    "Emissionen": 2230,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Andere Länder",
+    "Emissionen": 2106,
+    "Typ": "Land"
+  },
+  {
     "Name": "Saudi Aramco",
     "Emissionen": 1951,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Russland",
+    "Emissionen": 1640,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Japan",
+    "Emissionen": 1210,
+    "Typ": "Land"
   },
   {
     "Name": "Gazprom",
@@ -25,9 +55,24 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Deutschland",
+    "Emissionen": 809,
+    "Typ": "Land"
+  },
+  {
     "Name": "Rosneft",
     "Emissionen": 777,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Iran",
+    "Emissionen": 669,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Südkorea",
+    "Emissionen": 659,
+    "Typ": "Land"
   },
   {
     "Name": "China National Petroleum Corporation",
@@ -45,6 +90,26 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Indonesien",
+    "Emissionen": 571,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Kanada",
+    "Emissionen": 568,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Saudi-Arabien",
+    "Emissionen": 557,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Mexiko",
+    "Emissionen": 531,
+    "Typ": "Land"
+  },
+  {
     "Name": "PEMEX",
     "Emissionen": 530,
     "Typ": "Unternehmen"
@@ -53,6 +118,11 @@
     "Name": "Royal Dutch Shell",
     "Emissionen": 508,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Brasilien",
+    "Emissionen": 504,
+    "Typ": "Land"
   },
   {
     "Name": "Sonatrach",
@@ -65,6 +135,11 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Südafrika",
+    "Emissionen": 449,
+    "Typ": "Land"
+  },
+  {
     "Name": "BP",
     "Emissionen": 448,
     "Typ": "Unternehmen"
@@ -73,6 +148,21 @@
     "Name": "Qatar Petroleum",
     "Emissionen": 414,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Australien",
+    "Emissionen": 414,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Vereinigtes Königreich",
+    "Emissionen": 407,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Türkei",
+    "Emissionen": 404,
+    "Typ": "Land"
   },
   {
     "Name": "Petróleos de Venezuela",
@@ -105,9 +195,24 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Italien",
+    "Emissionen": 357,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Frankreich",
+    "Emissionen": 351,
+    "Typ": "Land"
+  },
+  {
     "Name": "China National Coal",
     "Emissionen": 350,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Thailand",
+    "Emissionen": 343,
+    "Typ": "Land"
   },
   {
     "Name": "Petronas",
@@ -123,6 +228,11 @@
     "Name": "Lukoil",
     "Emissionen": 328,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Polen",
+    "Emissionen": 326,
+    "Typ": "Land"
   },
   {
     "Name": "Glencore",
@@ -160,9 +270,34 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Republik China (Taiwan)",
+    "Emissionen": 280,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Kasachstan",
+    "Emissionen": 268,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Spanien",
+    "Emissionen": 263,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Malaysia",
+    "Emissionen": 259,
+    "Typ": "Land"
+  },
+  {
     "Name": "Yankuang Group",
     "Emissionen": 256,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Ukraine",
+    "Emissionen": 240,
+    "Typ": "Land"
   },
   {
     "Name": "Arch Coal",
@@ -195,6 +330,16 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Vietnam",
+    "Emissionen": 222,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Ägypten",
+    "Emissionen": 219,
+    "Typ": "Land"
+  },
+  {
     "Name": "SUEK",
     "Emissionen": 218,
     "Typ": "Unternehmen"
@@ -215,9 +360,19 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Vereinigte Arabische Emirate",
+    "Emissionen": 213,
+    "Typ": "Land"
+  },
+  {
     "Name": "Surgutneftegas",
     "Emissionen": 212,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Argentinien",
+    "Emissionen": 206,
+    "Typ": "Land"
   },
   {
     "Name": "Shanxi Jincheng Anthracite Coal Mining",
@@ -230,6 +385,11 @@
     "Typ": "Unternehmen"
   },
   {
+    "Name": "Pakistan",
+    "Emissionen": 200,
+    "Typ": "Land"
+  },
+  {
     "Name": "Sinopec",
     "Emissionen": 197,
     "Typ": "Unternehmen"
@@ -238,6 +398,11 @@
     "Name": "Kailuan Group",
     "Emissionen": 192,
     "Typ": "Unternehmen"
+  },
+  {
+    "Name": "Irak",
+    "Emissionen": 190,
+    "Typ": "Land"
   },
   {
     "Name": "China National Offshore Oil",
@@ -250,168 +415,8 @@
     "Typ": "Unternehmen"
   },
   {
-    "Name": "Volksrepublik China",
-    "Emissionen": 10200,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Vereinigte Staaten",
-    "Emissionen": 5360,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Indien",
-    "Emissionen": 2230,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Russland",
-    "Emissionen": 1640,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Japan",
-    "Emissionen": 1210,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Deutschland",
-    "Emissionen": 809,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Iran",
-    "Emissionen": 669,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Südkorea",
-    "Emissionen": 659,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Indonesien",
-    "Emissionen": 571,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Saudi-Arabien",
-    "Emissionen": 557,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Kanada",
-    "Emissionen": 568,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Südafrika",
-    "Emissionen": 449,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Mexiko",
-    "Emissionen": 531,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Brasilien",
-    "Emissionen": 504,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Australien",
-    "Emissionen": 414,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Türkei",
-    "Emissionen": 404,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Vereinigtes Königreich",
-    "Emissionen": 407,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Italien",
-    "Emissionen": 357,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Polen",
-    "Emissionen": 326,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Frankreich",
-    "Emissionen": 351,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Vietnam",
-    "Emissionen": 222,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Kasachstan",
-    "Emissionen": 268,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Republik China (Taiwan)",
-    "Emissionen": 280,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Thailand",
-    "Emissionen": 343,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Spanien",
-    "Emissionen": 263,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Ägypten",
-    "Emissionen": 219,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Malaysia",
-    "Emissionen": 259,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Pakistan",
-    "Emissionen": 200,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Vereinigte Arabische Emirate",
-    "Emissionen": 213,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Argentinien",
-    "Emissionen": 206,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Irak",
-    "Emissionen": 190,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Ukraine",
-    "Emissionen": 240,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Algerien",
-    "Emissionen": 151,
+    "Name": "Venezuela",
+    "Emissionen": 175,
     "Typ": "Land"
   },
   {
@@ -420,18 +425,8 @@
     "Typ": "Land"
   },
   {
-    "Name": "Philippinen",
-    "Emissionen": 125,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Venezuela",
-    "Emissionen": 175,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Bangladesch",
-    "Emissionen": 85,
+    "Name": "Algerien",
+    "Emissionen": 151,
     "Typ": "Land"
   },
   {
@@ -440,13 +435,8 @@
     "Typ": "Land"
   },
   {
-    "Name": "Tschechien",
-    "Emissionen": 107,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Belgien",
-    "Emissionen": 100,
+    "Name": "Philippinen",
+    "Emissionen": 125,
     "Typ": "Land"
   },
   {
@@ -455,23 +445,23 @@
     "Typ": "Land"
   },
   {
+    "Name": "Tschechien",
+    "Emissionen": 107,
+    "Typ": "Land"
+  },
+  {
     "Name": "Kuwait",
     "Emissionen": 102,
     "Typ": "Land"
   },
   {
+    "Name": "Belgien",
+    "Emissionen": 100,
+    "Typ": "Land"
+  },
+  {
     "Name": "Usbekistan",
     "Emissionen": 98,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Oman",
-    "Emissionen": 70,
-    "Typ": "Land"
-  },
-  {
-    "Name": "Turkmenistan",
-    "Emissionen": 56,
     "Typ": "Land"
   },
   {
@@ -485,13 +475,13 @@
     "Typ": "Land"
   },
   {
-    "Name": "Rumänien",
-    "Emissionen": 76,
+    "Name": "Bangladesch",
+    "Emissionen": 85,
     "Typ": "Land"
   },
   {
-    "Name": "Österreich",
-    "Emissionen": 68,
+    "Name": "Rumänien",
+    "Emissionen": 76,
     "Typ": "Land"
   },
   {
@@ -500,8 +490,18 @@
     "Typ": "Land"
   },
   {
-    "Name": "Andere Länder",
-    "Emissionen": 2106,
+    "Name": "Oman",
+    "Emissionen": 70,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Österreich",
+    "Emissionen": 68,
+    "Typ": "Land"
+  },
+  {
+    "Name": "Turkmenistan",
+    "Emissionen": 56,
     "Typ": "Land"
   }
 ]
