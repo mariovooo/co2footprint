@@ -8,6 +8,7 @@ import AgricultureIcon from '@mui/icons-material/Agriculture';
 import FactoryIcon from '@mui/icons-material/Factory';
 import RecyclingIcon from '@mui/icons-material/Recycling';
 import CategoryIcon from '@mui/icons-material/Category';
+import '@fontsource/josefin-sans/300.css';
 
 function Home() {
 
@@ -22,7 +23,7 @@ function Home() {
             </Container>
 
             <Grid container spacing={4}>
-              <Grid size={6}>
+              <Grid size={{ xs: 12, md: 6 }}>
                 <Box
                   component="img"
                   sx={{
@@ -35,7 +36,7 @@ function Home() {
                   src="./field.jpg"
                 />
               </Grid>
-              <Grid size={6}>
+              <Grid size={{ xs: 12, md: 6 }}>
                 <Container>
                   <div className="text">
                     <h2>Was ist der CO2-Fußabdruck?</h2>
@@ -49,19 +50,19 @@ function Home() {
             <Container>
               <h2>Sektoren</h2>
               <Grid container spacing={4}>
-                <Grid size={4}>
+                <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                   <CustomCard title="Energie" text="Dies ist ein informativer Text innerhalb der Card." icon={BoltIcon} />
                 </Grid>
-                <Grid size={4}>
+                <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                   <CustomCard title="Landwirtschaft" text="Dies ist ein informativer Text innerhalb der Card." icon={AgricultureIcon} />
                 </Grid>
-                <Grid size={4}>
+                <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                   <CustomCard title="Industrie" text="Dies ist ein informativer Text innerhalb der Card." icon={FactoryIcon} />
                 </Grid>
-                <Grid size={4}>
+                <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                   <CustomCard title="Abfall" text="Dies ist ein informativer Text innerhalb der Card." icon={RecyclingIcon} />
                 </Grid>
-                <Grid size={4}>
+                <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                   <CustomCard title="Sonstige Sektoren" text="Dies ist ein informativer Text innerhalb der Card." icon={CategoryIcon} />
                 </Grid>
               </Grid>

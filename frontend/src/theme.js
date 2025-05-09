@@ -16,7 +16,9 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Josefin Sans","Roboto", "Helvetica", "Arial", sans-serif',
+    fontSize: 16,
+    h2: { fontSize: 32 }
   },
   components: {
     MuiButton: {
