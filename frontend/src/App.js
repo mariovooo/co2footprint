@@ -114,6 +114,20 @@ function App() {
             </Container>
           </Grid>
         </section>
+        <footer>
+          <Grid container spacing={0}>
+            <Grid size={12}>
+                <div>
+                <Button className='whiteTextButton' disableElevation>Impressum</Button>
+                <Button className='whiteTextButton' disableElevation>Datenschutzerklärung</Button>
+                </div>
+              </Grid>
+              <Grid size={12}>
+                <span>© CO2-Footprint by Mario Vogel</span>
+              </Grid>
+          </Grid>
+
+        </footer>
       </div>
       <CssBaseline />
     </ThemeProvider>

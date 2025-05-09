@@ -27,6 +27,17 @@ header * {
   color: #fff
 }
 
+footer {
+  background-color: #bbb;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.whiteTextButton {
+  color: #fff !important;
+}
+
 [dir="ltr"] .customFab {
   left: 16px;
 }
