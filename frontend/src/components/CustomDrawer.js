@@ -8,6 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import NavigationIcon from '@mui/icons-material/Navigation';
 import Fab from '@mui/material/Fab';
 import { useState } from 'react';
+import useLangDirection from '../useLangDirection';
 
 function CustomDrawer() {
 
@@ -36,6 +37,8 @@ function CustomDrawer() {
         setOpen(newOpen);
     };
 
+    const drawerAlign = useLangDirection() === 'ltr' ? 'left' : 'right';
+
     const DrawerList = (
         <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
             <List>
@@ -52,16 +55,15 @@ function CustomDrawer() {
 
     return (
         <>
-            <Fab variant="extended" onClick={toggleDrawer(true)} sx={{
+            <Fab variant="extended" onClick={toggleDrawer(true)} className='customFab' sx={{
                 position: 'fixed',
                 bottom: 16,
-                left: 16,
                 zIndex: 1000,
             }}>
                 <NavigationIcon sx={{ mr: 1 }} />
                 Navigation
             </Fab>
-            <Drawer open={open} onClose={toggleDrawer(false)}>
+            <Drawer open={open} onClose={toggleDrawer(false)} anchor={drawerAlign}>
                 {DrawerList}
             </Drawer>
         </>
