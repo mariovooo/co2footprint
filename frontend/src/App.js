@@ -13,6 +13,9 @@ import { useEffect } from 'react';
 
 function App() {
 
+const langCode = localStorage.getItem('lang') || 'en';
+document.documentElement.lang = langCode;
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 

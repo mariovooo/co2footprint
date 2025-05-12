@@ -1,4 +1,5 @@
 import { Button, Grid } from '@mui/material';
+import LangButton from './LangButton';
 
 function Footer() {
     return (
@@ -9,6 +10,10 @@ function Footer() {
               <Button className='whiteTextButton' disableElevation>Impressum</Button>
               <Button className='whiteTextButton' disableElevation>Datenschutzerklärung</Button>
             </div>
+          </Grid>
+          <Grid size={12}>
+            <LangButton langCode="en" langName="Englisch"/>
+            <LangButton langCode="ar" langName="Arabisch"/>
           </Grid>
           <Grid size={12}>
             <span>© CO2-Footprint by Mario Vogel</span>
