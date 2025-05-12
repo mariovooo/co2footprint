@@ -1,0 +1,7 @@
+[dir="ltr"] .customFab {
+    left: 16px;
+}
+
+[dir="rtl"] .customFab {
+    right: 16px;
+}

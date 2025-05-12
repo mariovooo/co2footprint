@@ -1,3 +1,4 @@
+import './Footer.css';
 import { Button, Grid } from '@mui/material';
 import LangButton from './LangButton';
 

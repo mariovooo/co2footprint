@@ -1,3 +1,4 @@
+import './Header.css';
 import logo from '../treelogo.svg';
 import { Link } from "react-router-dom";
 import { Button, AppBar, Box, Toolbar, Typography } from '@mui/material';
