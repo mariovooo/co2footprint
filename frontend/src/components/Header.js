@@ -30,12 +30,12 @@ function Header() {
                                     component="img"
                                     className="headerLogo"
                                     alt="logo"
-                                    title="CO2-footprint"
+                                    title="CO₂-footprint"
                                     src={logo}
                                 />
                             </Link>
                             <Typography variant="h5" component="div">
-                                CO2-Footprint
+                                CO₂-Footprint
                             </Typography>
                         </Box>
                         <Box className="headerFlexInner" sx={{ display: { xs: 'none', md: 'block' } }}>

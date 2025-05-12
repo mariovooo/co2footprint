@@ -17,7 +17,7 @@ function Footer() {
             <LangButton langCode="ar" langName="Arabisch"/>
           </Grid>
           <Grid size={12}>
-            <span>© CO2-Footprint by Mario Vogel</span>
+            <span>© CO₂-Footprint by Mario Vogel</span>
           </Grid>
         </Grid>
       </footer>
