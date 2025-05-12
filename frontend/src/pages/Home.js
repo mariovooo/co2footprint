@@ -14,7 +14,7 @@ function Home() {
     return (
         <>
             <Grid container spacing={4}>
-                <HeaderImage url="./factory.jpg" title="Unser CO2-Fußabdruck und der Klimawandel" filter={true} />
+                <HeaderImage url="./factory.jpg" title="Unser CO₂-Fußabdruck und der Klimawandel" filter={true} />
                 <Container>
                     <Box className="text">
                         <h2>Welche Länder und Unternehmen sind die größten Treibhausgasemittenten?</h2>
@@ -24,7 +24,7 @@ function Home() {
                 </Container>
                 <Container>
                     <Box className="text">
-                        <h2>Ausstoß (in Millionen Tonnen CO2)</h2>
+                        <h2>Ausstoß (in Millionen Tonnen CO₂)</h2>
                         <CustomTable data={Emissionen} />
                     </Box>
                 </Container>
@@ -44,7 +44,7 @@ function Home() {
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Container>
                             <div className="text">
-                                <h2>Was ist der CO2-Fußabdruck?</h2>
+                                <h2>Was ist der C₂2-Fußabdruck?</h2>
                                 <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                                 </p>
                             </div>
@@ -74,7 +74,7 @@ function Home() {
                 </Container>
                 <Container>
                     <div className="text">
-                        <h2>Wer hat den größten CO2-Fußabdruck?</h2>
+                        <h2>Wer hat den größten CO₂-Fußabdruck?</h2>
                         <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
