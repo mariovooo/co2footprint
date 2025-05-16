@@ -20,7 +20,12 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const observer = new ResizeObserver(() => {
+      window.scrollTo(0, 0);
+    });
+
+    observer.observe(document.body); // scroll fix
+
   }, [pathname]);
 
   return null;
