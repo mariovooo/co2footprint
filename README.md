@@ -1,5 +1,5 @@
 
-# CO₂-Footprint Dashboard
+# CO₂-Footprint
 
 Webanwendung, die exemplarisch die globalen CO₂-Emissionen von Ländern und Unternehmen visualisiert.
 
